@@ -18,4 +18,4 @@ $ open _site
 
 # LICENSE
 
-2009~2016 (C) Atelier Kiraly All Rights Reserved.
+2009~2017 (C) Atelier Kiraly All Rights Reserved.

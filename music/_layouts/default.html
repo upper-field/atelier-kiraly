@@ -3,81 +3,80 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
-  <meta http-equiv="content-type" content="text/html; charset=Shift_JIS">
-  <meta http-equiv="content-style-type" content="text/css">
-  <title>{{ page.title }} - 同人音楽サークル「キラリ音楽工房」 ~ Atelier Kiraly ~ </title>
+  <title>同人音楽サークル「キラリ音楽工房」 ~ Atelier Kiraly ~ </title>
   <meta name="description" content="同人音楽サークル『キラリ音楽工房』のサイト">
   <meta name="keywords" content="同人,音楽,DTM,作曲,サークル,オーケストラ,キラリ,綾河キラリ,キラリ音楽,きらり,素材,ゲーム用BGM,ゲーム素材,Kiraly,doujin">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <script src="js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </head>
-<body style="padding-top:70px;" id="top">
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button class="navbar-toggle" data-toggle="collapse" data-target=".target">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <span class="navbar-brand">キラリ音楽工房</span>
-      </div>
+<body id="top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="">キラリ音楽工房</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div class="collapse navbar-collapse target">
-        <ul class="nav navbar-nav">
-          <li {% if page.nav == "index" %} class="active" {% endif %}><a href="/index.html"><span class="glyphicon glyphicon-music"></span> 作品一覧</a></li>
-          <li {% if page.nav == "event" %} class="active" {% endif %}><a href="/event.html"><span class="glyphicon glyphicon-list-alt"></span> イベント情報</a></li>
-          <li {% if page.nav == "news" %} class="active" {% endif %}><a href="/news.html"><span class="glyphicon glyphicon-pencil"></span> 更新情報</a></li>
-          <li {% if page.nav == "profile" %} class="active" {% endif %}><a href="/profile.html"><span class="glyphicon glyphicon-user"></span> プロフィール</a></li>
-          <li {% if page.nav == "contact" %} class="active" {% endif %}><a href="/contact.html"><span class="glyphicon glyphicon-envelope"></span> お問い合わせ</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-arrow-up"></span> トップに戻る</a></li>
-        </ul>
-      </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#discography">作品一覧</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#event">イベント情報</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#news">更新情報</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#profile">プロフィール</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">お問い合わせ</a>
+        </li>
+      </ul>
     </div>
   </nav>
 
-  <div class="container-fluid">
+  <div class="container">
     {{ content }}
   </div>
 
-  <div class="container-fluid">
-    <hr>
-    <br>
-    <br>
-    <div class="row">
-      <div class="col-xs-6 col-sm-4 col-sm-offset-2 col-md-2 col-md-offset-4">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col"></div>
+      <div class="col-10 col-sm-8 col-md-6 col-lg-4">
         <div class="list-group">
-          <a href="/news.html" class="list-group-item">
-            <span class="glyphicon glyphicon-pencil"></span> 更新情報</a>
-          </a>
-          <a href="/profile.html" class="list-group-item">
-            <span class="glyphicon glyphicon-glyphicon-user"></span> プロフィール
-          </a>
-          <a href="/contact.html" class="list-group-item">
-            <span class="glyphicon glyphicon-envelope"></span> お問い合わせ
-          </a>
+          <a href="#discography" class="list-group-item bg-light text-secondary">作品一覧</a>
+          <a href="#event" class="list-group-item bg-light text-secondary">イベント情報</a>
+          <a href="#news" class="list-group-item bg-light text-secondary">更新情報</a>
+          <a href="#profile" class="list-group-item bg-light text-secondary">プロフィール</a>
+          <a href="#contact" class="list-group-item bg-light text-secondary">お問い合わせ</a>
+          <a href="#top" class="list-group-item bg-light text-secondary">トップに戻る</a>
         </div>
       </div>
-      <div class="col-xs-6 col-sm-4 col-md-2">
+<!-- test用
+      <div class="col-10 col-sm-8 col-md-6 col-lg-4">
         <div class="list-group">
-          <a href="/event.html" class="list-group-item">
-            <span class="glyphicon glyphicon-list-alt"></span> イベント情報
-          </a>
-          <a href="/index.html" class="list-group-item">
-            <span class="glyphicon glyphicon-music"></span> 作品一覧
-          </a>
-          <a href="#" class="list-group-item">
-            <span class="glyphicon glyphicon-arrow-up"></span> トップに戻る
-          </a>
+          <a href="/index" class="list-group-item bg-light text-secondary">作品一覧</a>
+          <a href="/event.html" class="list-group-item bg-light text-secondary">イベント情報</a>
+          <a href="/news.html" class="list-group-item bg-light text-secondary">更新情報</a>
+          <a href="/profile.html" class="list-group-item bg-light text-secondary">プロフィール</a>
+          <a href="/contact.html" class="list-group-item bg-light text-secondary">お問い合わせ</a>
+          <a href="#top" class="list-group-item bg-light text-secondary">トップに戻る</a>
         </div>
       </div>
+ -->
+      <div class="col"></div>
     </div>
-    <br>
-    <br>
-    <div class="text-center">
-      2009~2017 (C) Atelier Kiraly All Rights Reserved.
+    <div class="row text-center mb-5">
+      <div class="col">
+        <small>2009~2017 (C) Atelier Kiraly All Rights Reserved.</small>
+      </div>
     </div>
-    <br>
   </div>
+
 </body>
 </html>
